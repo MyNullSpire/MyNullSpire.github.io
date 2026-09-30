@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#faf7f7">
+  <meta name="description" content="CYBERA is a legal cybersecurity marketplace for defensive software, services and free security education.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="CYBERA — Legal Cybersecurity Store">
+  <meta property="og:description" content="Defensive products, practical services and free security education.">
+  <meta property="og:type" content="website">
+  <title>CYBERA — Legal Cybersecurity Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-loader" id="siteLoader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-brand"><span class="logo-bars"><i></i><i></i><i></i></span>CYBERA</div>
+      <div class="loader-track"><span></span></div>
+      <div class="loader-status">Initializing secure storefront</div>
+    </div>
+  </div>
+
+  <div class="page-glow page-glow-a" aria-hidden="true"></div>
+  <div class="page-glow page-glow-b" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#top" aria-label="CYBERA home">
+      <span class="logo-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>CYBERA</span>
+    </a>
+
+    <nav class="nav" id="primaryNav" aria-label="Primary navigation">
+      <a href="#shop">Shop</a>
+      <a href="#stories">Stories</a>
+      <a href="#academy">Academy</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="topbar-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+        <span class="theme-dot" aria-hidden="true"></span>
+      </button>
+      <button class="cart-btn" id="openCart" type="button" aria-label="Open cart">
+        <span class="cart-symbol" aria-hidden="true"></span>
+        <span class="cart-label">Cart</span>
+        <b id="cartCount">0</b>
+      </button>
+      <button class="menu-btn" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span>Legal cybersecurity marketplace</div>
+        <h1>Serious protection.<br><span>Beautifully simple.</span></h1>
+        <p>Defensive software, privacy tools, recovery services and practical education — curated for lawful security work without the usual noise.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#shop">Explore the store <span>↗</span></a>
+          <a class="button-link" href="#academy">Learn for free <span>↓</span></a>
+        </div>
+        <div class="hero-proof">
+          <span><i></i> Clear licensing</span>
+          <span><i></i> Defensive catalog</span>
+          <span><i></i> Human support</span>
+        </div>
+      </div>
+
+      <div class="hero-stage reveal reveal-delay-1">
+        <div class="stage-grid" aria-hidden="true"></div>
+        <div class="stage-orbit orbit-one" aria-hidden="true"></div>
+        <div class="stage-orbit orbit-two" aria-hidden="true"></div>
+        <div class="hero-panel hero-panel-main">
+          <div class="panel-top">
+            <span class="tiny-status"><i></i> LIVE POSTURE</span>
+            <span class="panel-date">29 SEP · 2026</span>
+          </div>
+          <div class="panel-score"><strong>94</strong><span>/100<br><small>PROTECTED</small></span></div>
+          <div class="health-line"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="panel-metrics">
+            <div><small>ENDPOINTS</small><b>12 / 12</b></div>
+            <div><small>BACKUP</small><b>ENCRYPTED</b></div>
+            <div><small>IDENTITY</small><b>HARDENED</b></div>
+          </div>
+        </div>
+        <div class="hero-panel hero-panel-float float-a">
+          <span class="float-icon">+</span>
+          <div><small>Recovery</small><b>READY</b></div>
+        </div>
+        <div class="hero-panel hero-panel-float float-b">
+          <span class="float-ring"></span>
+          <div><small>Threat feed</small><b>QUIET</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="signal-strip section-shell" id="trust" aria-label="Store highlights">
+      <div><b>12</b><span>defensive products</span></div>
+      <div><b>06</b><span>free security stories</span></div>
+      <div><b>24/7</b><span>self-serve access</span></div>
+      <div><b>100%</b><span>lawful-use focus</span></div>
+    </section>
+
+    <section class="shop section-shell" id="shop">
+      <div class="section-heading reveal">
+        <div>
+          <div class="eyebrow">The store</div>
+          <h2>Build your security stack.</h2>
+        </div>
+        <p>Pick one layer or combine a few. Product cards use real image assets, real pricing data and local cart persistence.</p>
+      </div>
+
+      <div class="shop-toolbar reveal reveal-delay-1">
+        <div class="filter-group" id="categoryFilters" role="tablist" aria-label="Product categories">
+          <button class="filter active" data-filter="all" type="button">All <span>12</span></button>
+          <button class="filter" data-filter="privacy" type="button">Privacy</button>
+          <button class="filter" data-filter="endpoint" type="button">Endpoint</button>
+          <button class="filter" data-filter="backup" type="button">Backup</button>
+          <button class="filter" data-filter="training" type="button">Training</button>
+          <button class="filter" data-filter="services" type="button">Services</button>
+        </div>
+        <div class="toolbar-right">
+          <label class="search-field"><span class="search-symbol" aria-hidden="true"></span><input id="searchInput" type="search" placeholder="Search the catalog" autocomplete="off"></label>
+          <label class="sort-field"><span>Sort</span><select id="sortSelect"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="name">Name</option></select></label>
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden>No matching products. Try another category or search term.</div>
+    </section>
+
+    <section class="bundle-band section-shell reveal">
+      <div class="bundle-copy">
+        <div class="eyebrow">Popular stack</div>
+        <h2>The calm setup for a new device.</h2>
+        <p>Pair identity hygiene, endpoint defense and encrypted backup into one clean starting point.</p>
+        <button class="button button-dark" id="addBundle" type="button">Add starter stack <span>→</span></button>
+      </div>
+      <div class="bundle-list">
+        <div class="bundle-item"><span>01</span><div><b>Identity Kit</b><small>Account hardening</small></div><strong>$24</strong></div>
+        <div class="bundle-item"><span>02</span><div><b>ShieldDesk</b><small>Endpoint protection</small></div><strong>$79</strong></div>
+        <div class="bundle-item"><span>03</span><div><b>RestoreBox</b><small>Encrypted backup</small></div><strong>$59</strong></div>
+      </div>
+    </section>
+
+    <section class="stories section-shell" id="stories">
+      <div class="section-heading reveal">
+        <div>
+          <div class="eyebrow">Stories</div>
+          <h2>Five-minute security lessons.</h2>
+        </div>
+        <p>Tap a story for a quick, practical lesson. No paywall, no panic language, no clickbait.</p>
+      </div>
+      <div class="stories-rail" id="storiesRail"></div>
+    </section>
+
+    <section class="academy section-shell" id="academy">
+      <div class="academy-head reveal">
+        <div>
+          <div class="eyebrow">Open-source academy</div>
+          <h2>Free lessons from GitHub issues.</h2>
+        </div>
+        <div class="github-status" id="githubStatus"><span class="status-dot"></span><span>Loading issue feed…</span></div>
+      </div>
+      <div class="academy-layout">
+        <article class="academy-lead reveal">
+          <div class="academy-label">CURATED FORMAT</div>
+          <h3>Write an issue. Add an image. CYBERA turns it into a lesson.</h3>
+          <p>The frontend can read public repository issues, ignore pull requests, extract embedded images and present each issue as a compact learning card.</p>
+          <div class="academy-code"><span>GET</span><code>/repos/&lt;owner&gt;/&lt;repo&gt;/issues</code></div>
+          <a class="button-link" id="githubRepoLink" href="#" target="_blank" rel="noreferrer noopener">Open education repository <span>↗</span></a>
+        </article>
+        <div class="issue-grid" id="issueGrid"></div>
+      </div>
+    </section>
+
+    <section class="reviews section-shell" id="reviews">
+      <div class="section-heading reveal">
+        <div>
+          <div class="eyebrow">Reviews</div>
+          <h2>Quiet products. Happy operators.</h2>
+        </div>
+        <div class="review-controls"><button class="round-control" id="reviewPrev" type="button" aria-label="Previous review">←</button><button class="round-control" id="reviewNext" type="button" aria-label="Next review">→</button></div>
+      </div>
+      <div class="review-window reveal reveal-delay-1"><div class="review-track" id="reviewTrack"></div></div>
+    </section>
+
+    <section class="services section-shell" id="services">
+      <div class="service-copy reveal">
+        <div class="eyebrow">Human support</div>
+        <h2>Need someone to help you put it together?</h2>
+        <p>Choose a focused review, recovery session or compliance-oriented assessment. The store flow is ready for a real service backend later.</p>
+        <a class="button button-primary" href="#shop">Browse services <span>↗</span></a>
+      </div>
+      <div class="service-grid reveal reveal-delay-1">
+        <article><span>01</span><h3>Security Checkup</h3><p>Review devices, accounts and backups with a prioritized action sheet.</p><b>$199</b></article>
+        <article><span>02</span><h3>Recovery Session</h3><p>Guided cleanup and recovery steps after a security incident.</p><b>$149</b></article>
+        <article><span>03</span><h3>Audit Plus</h3><p>Documentation-oriented review for small teams and operational controls.</p><b>$329</b></article>
+      </div>
+    </section>
+
+    <section class="faq section-shell" id="faq">
+      <div class="faq-head reveal"><div class="eyebrow">FAQ</div><h2>Everything important, upfront.</h2></div>
+      <div class="faq-list reveal reveal-delay-1">
+        <details open><summary>What does legal cybersecurity mean here?</summary><p>The catalog is limited to defensive uses such as privacy, endpoint protection, backup, recovery, security awareness and compliance-oriented services.</p></details>
+        <details><summary>Can the shop become a real checkout?</summary><p>Yes. The cart, checkout state, order summary and local persistence are already separated from presentation so a backend or payment provider can be connected later without rewriting the storefront.</p></details>
+        <details><summary>How do GitHub lessons work?</summary><p>A public repository is configured in the app module. Its issues are fetched client-side; pull requests are filtered out, issue images are detected from Markdown and the remaining content is shown as learning cards.</p></details>
+        <details><summary>Are the prices real?</summary><p>The included catalog is a demo dataset. Replace the data module with your actual SKUs, prices, inventory and vendor metadata before launch.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-shell section-shell">
+      <div class="footer-main">
+        <div class="footer-brand-column">
+          <a class="brand footer-brand" href="#top"><span class="logo-bars" aria-hidden="true"><i></i><i></i><i></i></span><span>CYBERA</span></a>
+          <p>Legal cybersecurity for people and teams who prefer calm, practical protection.</p>
+          <div class="footer-trust"><span>DEFENSIVE ONLY</span><span>LICENSE-SAFE</span><span>OPEN EDUCATION</span></div>
+        </div>
+        <div class="footer-column"><h4>Store</h4><a href="#shop">All products</a><a href="#shop">Privacy</a><a href="#shop">Endpoint</a><a href="#shop">Backup</a><a href="#services">Services</a></div>
+        <div class="footer-column"><h4>Learn</h4><a href="#stories">Stories</a><a href="#academy">GitHub Academy</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></div>
+        <div class="footer-column"><h4>Company</h4><a href="#trust">Trust</a><a href="#contact" id="contactLink">Contact</a><a href="#privacy" data-info-modal="privacy">Privacy</a><a href="#terms" data-info-modal="terms">Terms</a></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> CYBERA</span><span>Built for lawful security work.</span><button class="back-top" id="backTop" type="button">Back to top ↑</button></div>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-head"><div><div class="eyebrow">Your cart</div><h2>Your security stack.</h2></div><button class="close-btn" id="closeCart" type="button" aria-label="Close cart">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer"><div class="total-row"><span>Subtotal</span><strong id="cartTotal">$0.00</strong></div><button class="button button-primary checkout-button" id="checkoutBtn" type="button">Continue to checkout <span>→</span></button><small>Demo checkout shell — connect your payment backend before launch.</small></div>
+  </aside>
+
+  <div class="modal-layer" id="modalLayer" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close-modal type="button" aria-label="Close">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div class="story-viewer" id="storyViewer" hidden>
+    <div class="story-backdrop" data-close-story></div>
+    <article class="story-frame" id="storyFrame">
+      <button class="story-close" type="button" data-close-story aria-label="Close story">×</button>
+      <img id="storyImage" src="" alt="">
+      <div class="story-progress"><span></span></div>
+      <div class="story-overlay"><div class="eyebrow">CYBERA FREE STORY</div><h2 id="storyTitle"></h2><p id="storyBody"></p><div class="story-actions"><button class="button button-light" id="storyPrev" type="button">Previous</button><button class="button button-light" id="storyNext" type="button">Next</button></div></div>
+    </article>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
