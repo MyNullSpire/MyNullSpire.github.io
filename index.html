@@ -1,266 +1,76 @@
 <!doctype html>
-<html lang="en" dir="ltr" data-theme="light">
+<html lang="fa" dir="rtl" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#faf7f7">
-  <meta name="description" content="CYBERA is a legal cybersecurity marketplace for defensive software, services and free security education.">
+  <meta name="theme-color" content="#f3f4f5">
   <meta name="color-scheme" content="light dark">
-  <meta property="og:title" content="CYBERA — Legal Cybersecurity Store">
-  <meta property="og:description" content="Defensive products, practical services and free security education.">
+  <meta name="description" content="NullSpire — مقالات و یادداشت‌های امنیت سایبری، هک اخلاقی، امنیت وب، پژوهش آسیب‌پذیری و دفاع عملی، متصل به GitHub Issues.">
+  <meta name="keywords" content="NullSpire, امنیت سایبری, هک اخلاقی, امنیت وب, تست نفوذ, آسیب پذیری, OWASP, ethical hacking, web security, vulnerability research">
+  <meta name="author" content="NullSpire">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="./">
   <meta property="og:type" content="website">
-  <title>CYBERA — Legal Cybersecurity Store</title>
+  <meta property="og:site_name" content="NullSpire">
+  <meta property="og:title" content="NullSpire — امنیت سایبری و هک اخلاقی">
+  <meta property="og:description" content="مقالات امنیت سایبری، هک اخلاقی، امنیت وب و پژوهش آسیب‌پذیری، متصل به GitHub Issues.">
+  <meta property="og:url" content="./">
+  <meta property="og:image" content="fallback.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NullSpire — امنیت سایبری و هک اخلاقی">
+  <meta name="twitter:description" content="مقالات امنیت سایبری، هک اخلاقی، امنیت وب و پژوهش آسیب‌پذیری.">
+  <meta name="twitter:image" content="fallback.svg">
+  <title>NullSpire — امنیت سایبری و هک اخلاقی</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"NullSpire","description":"Cybersecurity, ethical hacking, web security and vulnerability research posts powered by GitHub Issues.","url":"https://MyNullSpire.github.io/","inLanguage":["fa-IR","en-US","ru-RU"]}</script>
 </head>
 <body>
-  <div class="site-loader" id="siteLoader" aria-hidden="true">
-    <div class="loader-inner">
-      <div class="loader-brand"><span class="logo-bars"><i></i><i></i><i></i></span>CYBERA</div>
-      <div class="loader-track"><span></span></div>
-      <div class="loader-status">Initializing secure storefront</div>
-    </div>
-  </div>
-
-  <div class="page-glow page-glow-a" aria-hidden="true"></div>
-  <div class="page-glow page-glow-b" aria-hidden="true"></div>
-  <div class="grain" aria-hidden="true"></div>
-
+  <div class="site-loader" id="siteLoader" aria-hidden="true"><div class="loader-shell"><img src="logo.svg" alt="NullSpire" class="loader-logo"><div class="loader-brand">NULLSPIRE</div><div class="loader-caption" data-i18n="loading">در حال دریافت پست‌ها…</div></div></div>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="ambient ambient-c" aria-hidden="true"></div>
   <header class="topbar" id="topbar">
-    <a class="brand" href="#top" aria-label="CYBERA home">
-      <span class="logo-bars" aria-hidden="true"><i></i><i></i><i></i></span>
-      <span>CYBERA</span>
-    </a>
-
-    <nav class="nav" id="primaryNav" aria-label="Primary navigation">
-      <a href="#shop">Shop</a>
-      <a href="#stories">Stories</a>
-      <a href="#academy">Academy</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#faq">FAQ</a>
-    </nav>
-
-    <div class="topbar-actions">
-      <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme">
-        <span class="theme-dot" aria-hidden="true"></span>
-      </button>
-      <button class="cart-btn" id="openCart" type="button" aria-label="Open cart">
-        <span class="cart-symbol" aria-hidden="true"></span>
-        <span class="cart-label">Cart</span>
-        <b id="cartCount">0</b>
-      </button>
-      <button class="menu-btn" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">
-        <span></span><span></span>
-      </button>
+    <div class="topbar-inner section-shell">
+      <a class="brand" href="#top" data-i18n-aria="home"><span class="brand-mark"><img src="logo.svg" alt=""></span><span class="brand-name">NullSpire</span></a>
+      <nav class="nav" id="primaryNav" aria-label="Navigation">
+        <a href="#posts" class="nav-link active" data-i18n="navPosts">پست‌ها</a>
+        <a href="#github" class="nav-link" data-i18n="navGithub">گیت‌هاب</a>
+      </nav>
+      <div class="topbar-actions">
+        <button class="pill-control" id="authTopButton" type="button"><span class="control-dot"></span><span data-auth-label data-i18n="navConnect">ورود با گیت‌هاب</span></button>
+        <select class="language-select" id="languageSelect" aria-label="Language"><option value="fa">فا</option><option value="en">EN</option><option value="ru">RU</option></select>
+        <button class="icon-btn" id="themeToggle" type="button" data-i18n-aria="theme" data-i18n-title="theme"><span class="theme-symbol" aria-hidden="true"></span></button>
+        <button class="menu-btn" id="menuToggle" type="button" data-i18n-aria="menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
     </div>
   </header>
-
   <main id="top">
     <section class="hero section-shell">
-      <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span>Legal cybersecurity marketplace</div>
-        <h1>Serious protection.<br><span>Beautifully simple.</span></h1>
-        <p>Defensive software, privacy tools, recovery services and practical education — curated for lawful security work without the usual noise.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#shop">Explore the store <span>↗</span></a>
-          <a class="button-link" href="#academy">Learn for free <span>↓</span></a>
-        </div>
-        <div class="hero-proof">
-          <span><i></i> Clear licensing</span>
-          <span><i></i> Defensive catalog</span>
-          <span><i></i> Human support</span>
-        </div>
-      </div>
-
-      <div class="hero-stage reveal reveal-delay-1">
-        <div class="stage-grid" aria-hidden="true"></div>
-        <div class="stage-orbit orbit-one" aria-hidden="true"></div>
-        <div class="stage-orbit orbit-two" aria-hidden="true"></div>
-        <div class="hero-panel hero-panel-main">
-          <div class="panel-top">
-            <span class="tiny-status"><i></i> LIVE POSTURE</span>
-            <span class="panel-date">29 SEP · 2026</span>
-          </div>
-          <div class="panel-score"><strong>94</strong><span>/100<br><small>PROTECTED</small></span></div>
-          <div class="health-line"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-          <div class="panel-metrics">
-            <div><small>ENDPOINTS</small><b>12 / 12</b></div>
-            <div><small>BACKUP</small><b>ENCRYPTED</b></div>
-            <div><small>IDENTITY</small><b>HARDENED</b></div>
-          </div>
-        </div>
-        <div class="hero-panel hero-panel-float float-a">
-          <span class="float-icon">+</span>
-          <div><small>Recovery</small><b>READY</b></div>
-        </div>
-        <div class="hero-panel hero-panel-float float-b">
-          <span class="float-ring"></span>
-          <div><small>Threat feed</small><b>QUIET</b></div>
-        </div>
+      <div class="hero-copy reveal visible">
+        <div class="eyebrow" data-i18n="eyebrow">امنیت سایبری</div>
+        <h1><span data-i18n="heroTitle1">امنیت جدی.</span><br><strong data-i18n="heroTitle2">با طراحی دقیق.</strong></h1>
+        <p data-i18n="heroText">یادداشت‌ها و مقالات کاربردی درباره امنیت وب، هک اخلاقی، پژوهش آسیب‌پذیری و دفاع عملی؛ مستقیم از GitHub Issues و بدون شلوغی.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#posts"><span data-i18n="readPosts">مطالعه پست‌ها</span><span class="button-icon">↘</span></a><a class="button-link" id="heroRepoLink" href="#" target="_blank" rel="noreferrer noopener"><span data-i18n="repo">مخزن گیت‌هاب</span><span>↗</span></a><a class="button-link" id="heroTelegramLink" href="https://t.me/Nullactive" target="_blank" rel="noreferrer noopener"><span data-i18n="telegram">تلگرام</span><span>↗</span></a></div>
+        <div class="hero-proof"><span data-i18n="proof1">پژوهش امنیتی</span><span data-i18n="proof2">هک اخلاقی</span><span data-i18n="proof3">خواندن تمیز</span></div>
       </div>
     </section>
-
-    <section class="signal-strip section-shell" id="trust" aria-label="Store highlights">
-      <div><b>12</b><span>defensive products</span></div>
-      <div><b>06</b><span>free security stories</span></div>
-      <div><b>24/7</b><span>self-serve access</span></div>
-      <div><b>100%</b><span>lawful-use focus</span></div>
-    </section>
-
-    <section class="shop section-shell" id="shop">
-      <div class="section-heading reveal">
-        <div>
-          <div class="eyebrow">The store</div>
-          <h2>Build your security stack.</h2>
-        </div>
-        <p>Pick one layer or combine a few. Product cards use real image assets, real pricing data and local cart persistence.</p>
-      </div>
-
-      <div class="shop-toolbar reveal reveal-delay-1">
-        <div class="filter-group" id="categoryFilters" role="tablist" aria-label="Product categories">
-          <button class="filter active" data-filter="all" type="button">All <span>12</span></button>
-          <button class="filter" data-filter="privacy" type="button">Privacy</button>
-          <button class="filter" data-filter="endpoint" type="button">Endpoint</button>
-          <button class="filter" data-filter="backup" type="button">Backup</button>
-          <button class="filter" data-filter="training" type="button">Training</button>
-          <button class="filter" data-filter="services" type="button">Services</button>
-        </div>
-        <div class="toolbar-right">
-          <label class="search-field"><span class="search-symbol" aria-hidden="true"></span><input id="searchInput" type="search" placeholder="Search the catalog" autocomplete="off"></label>
-          <label class="sort-field"><span>Sort</span><select id="sortSelect"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="name">Name</option></select></label>
-        </div>
-      </div>
-
-      <div class="product-grid" id="productGrid" aria-live="polite"></div>
-      <div class="empty-state" id="emptyState" hidden>No matching products. Try another category or search term.</div>
-    </section>
-
-    <section class="bundle-band section-shell reveal">
-      <div class="bundle-copy">
-        <div class="eyebrow">Popular stack</div>
-        <h2>The calm setup for a new device.</h2>
-        <p>Pair identity hygiene, endpoint defense and encrypted backup into one clean starting point.</p>
-        <button class="button button-dark" id="addBundle" type="button">Add starter stack <span>→</span></button>
-      </div>
-      <div class="bundle-list">
-        <div class="bundle-item"><span>01</span><div><b>Identity Kit</b><small>Account hardening</small></div><strong>$24</strong></div>
-        <div class="bundle-item"><span>02</span><div><b>ShieldDesk</b><small>Endpoint protection</small></div><strong>$79</strong></div>
-        <div class="bundle-item"><span>03</span><div><b>RestoreBox</b><small>Encrypted backup</small></div><strong>$59</strong></div>
-      </div>
-    </section>
-
-    <section class="stories section-shell" id="stories">
-      <div class="section-heading reveal">
-        <div>
-          <div class="eyebrow">Stories</div>
-          <h2>Five-minute security lessons.</h2>
-        </div>
-        <p>Tap a story for a quick, practical lesson. No paywall, no panic language, no clickbait.</p>
-      </div>
-      <div class="stories-rail" id="storiesRail"></div>
-    </section>
-
-    <section class="academy section-shell" id="academy">
-      <div class="academy-head reveal">
-        <div>
-          <div class="eyebrow">Open-source academy</div>
-          <h2>Free lessons from GitHub issues.</h2>
-        </div>
-        <div class="github-status" id="githubStatus"><span class="status-dot"></span><span>Loading issue feed…</span></div>
-      </div>
-      <div class="academy-layout">
-        <article class="academy-lead reveal">
-          <div class="academy-label">CURATED FORMAT</div>
-          <h3>Write an issue. Add an image. CYBERA turns it into a lesson.</h3>
-          <p>The frontend can read public repository issues, ignore pull requests, extract embedded images and present each issue as a compact learning card.</p>
-          <div class="academy-code"><span>GET</span><code>/repos/&lt;owner&gt;/&lt;repo&gt;/issues</code></div>
-          <a class="button-link" id="githubRepoLink" href="#" target="_blank" rel="noreferrer noopener">Open education repository <span>↗</span></a>
-        </article>
-        <div class="issue-grid" id="issueGrid"></div>
-      </div>
-    </section>
-
-    <section class="reviews section-shell" id="reviews">
-      <div class="section-heading reveal">
-        <div>
-          <div class="eyebrow">Reviews</div>
-          <h2>Quiet products. Happy operators.</h2>
-        </div>
-        <div class="review-controls"><button class="round-control" id="reviewPrev" type="button" aria-label="Previous review">←</button><button class="round-control" id="reviewNext" type="button" aria-label="Next review">→</button></div>
-      </div>
-      <div class="review-window reveal reveal-delay-1"><div class="review-track" id="reviewTrack"></div></div>
-    </section>
-
-    <section class="services section-shell" id="services">
-      <div class="service-copy reveal">
-        <div class="eyebrow">Human support</div>
-        <h2>Need someone to help you put it together?</h2>
-        <p>Choose a focused review, recovery session or compliance-oriented assessment. The store flow is ready for a real service backend later.</p>
-        <a class="button button-primary" href="#shop">Browse services <span>↗</span></a>
-      </div>
-      <div class="service-grid reveal reveal-delay-1">
-        <article><span>01</span><h3>Security Checkup</h3><p>Review devices, accounts and backups with a prioritized action sheet.</p><b>$199</b></article>
-        <article><span>02</span><h3>Recovery Session</h3><p>Guided cleanup and recovery steps after a security incident.</p><b>$149</b></article>
-        <article><span>03</span><h3>Audit Plus</h3><p>Documentation-oriented review for small teams and operational controls.</p><b>$329</b></article>
-      </div>
-    </section>
-
-    <section class="faq section-shell" id="faq">
-      <div class="faq-head reveal"><div class="eyebrow">FAQ</div><h2>Everything important, upfront.</h2></div>
-      <div class="faq-list reveal reveal-delay-1">
-        <details open><summary>What does legal cybersecurity mean here?</summary><p>The catalog is limited to defensive uses such as privacy, endpoint protection, backup, recovery, security awareness and compliance-oriented services.</p></details>
-        <details><summary>Can the shop become a real checkout?</summary><p>Yes. The cart, checkout state, order summary and local persistence are already separated from presentation so a backend or payment provider can be connected later without rewriting the storefront.</p></details>
-        <details><summary>How do GitHub lessons work?</summary><p>A public repository is configured in the app module. Its issues are fetched client-side; pull requests are filtered out, issue images are detected from Markdown and the remaining content is shown as learning cards.</p></details>
-        <details><summary>Are the prices real?</summary><p>The included catalog is a demo dataset. Replace the data module with your actual SKUs, prices, inventory and vendor metadata before launch.</p></details>
-      </div>
+    <section class="posts section-shell" id="posts">
+      <div class="section-heading reveal visible"><div><div class="eyebrow" data-i18n="postsEyebrow">پست‌ها</div><h2 data-i18n="postsTitle">امنیت مفید، بدون نویز.</h2></div><div class="section-heading-side"><p data-i18n="postsText">پست‌ها مستقیماً از Issueهای مخزن خوانده می‌شوند و هر پست به گفت‌وگوی اصلی GitHub متصل است.</p><div class="section-heading-links"><a class="button-link" id="repoLink" href="#" target="_blank" rel="noreferrer noopener"><span data-i18n="repo">مخزن گیت‌هاب</span><span>↗</span></a><a class="button-link" id="telegramLink" href="https://t.me/Nullactive" target="_blank" rel="noreferrer noopener"><span data-i18n="telegram">تلگرام</span><span>↗</span></a><span class="api-badge" id="rateBadge" hidden></span></div></div></div>
+      <div class="posts-tools reveal visible"><label class="search-box"><span aria-hidden="true">⌕</span><input id="postSearch" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="جست‌وجوی عنوان، متن یا برچسب…" autocomplete="off"></label><div class="tool-actions"><select id="postSort" class="select-control"><option value="updated" data-i18n="sortUpdated">جدیدترین بروزرسانی</option><option value="comments" data-i18n="sortComments">بیشترین نظر</option><option value="created" data-i18n="sortCreated">جدیدترین انتشار</option></select><button class="button button-subtle" id="refreshPosts" type="button"><span data-i18n="refresh">بروزرسانی</span><span>↻</span></button></div></div>
+      <div class="posts-meta reveal visible"><span id="postsState" data-i18n="loading">در حال دریافت پست‌ها…</span><span id="postsCount">0</span></div>
+      <div class="post-grid" id="postGrid" aria-live="polite" aria-busy="true"></div>
+      <div class="posts-empty" id="postsEmpty" hidden><div class="empty-icon">⌕</div><strong data-i18n="noPosts">پستی پیدا نشد</strong><span id="postsEmptyText" data-i18n="emptyFeed">هنوز پستی برای نمایش وجود ندارد.</span></div>
+      <div class="posts-error" id="postsError" hidden><div class="empty-icon">!</div><strong data-i18n="loadError">دریافت پست‌ها ناموفق بود</strong><span data-i18n="loadErrorText">ارتباط با GitHub برقرار نشد. تلاش دوباره کنید.</span><button class="button button-primary" id="retryPosts" type="button"><span data-i18n="retry">تلاش دوباره</span><span>↻</span></button></div>
+      <button class="button button-subtle load-more-posts" id="loadMorePosts" type="button" hidden><span data-load-label data-i18n="loadMorePosts">بارگذاری همه پست‌ها</span><span>↓</span></button>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="footer-shell section-shell">
-      <div class="footer-main">
-        <div class="footer-brand-column">
-          <a class="brand footer-brand" href="#top"><span class="logo-bars" aria-hidden="true"><i></i><i></i><i></i></span><span>CYBERA</span></a>
-          <p>Legal cybersecurity for people and teams who prefer calm, practical protection.</p>
-          <div class="footer-trust"><span>DEFENSIVE ONLY</span><span>LICENSE-SAFE</span><span>OPEN EDUCATION</span></div>
-        </div>
-        <div class="footer-column"><h4>Store</h4><a href="#shop">All products</a><a href="#shop">Privacy</a><a href="#shop">Endpoint</a><a href="#shop">Backup</a><a href="#services">Services</a></div>
-        <div class="footer-column"><h4>Learn</h4><a href="#stories">Stories</a><a href="#academy">GitHub Academy</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></div>
-        <div class="footer-column"><h4>Company</h4><a href="#trust">Trust</a><a href="#contact" id="contactLink">Contact</a><a href="#privacy" data-info-modal="privacy">Privacy</a><a href="#terms" data-info-modal="terms">Terms</a></div>
-      </div>
-      <div class="footer-bottom"><span>© <span id="year"></span> CYBERA</span><span>Built for lawful security work.</span><button class="back-top" id="backTop" type="button">Back to top ↑</button></div>
-    </div>
-  </footer>
-
-  <div class="overlay" id="overlay" hidden></div>
-
-  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
-    <div class="drawer-head"><div><div class="eyebrow">Your cart</div><h2>Your security stack.</h2></div><button class="close-btn" id="closeCart" type="button" aria-label="Close cart">×</button></div>
-    <div class="cart-items" id="cartItems"></div>
-    <div class="cart-footer"><div class="total-row"><span>Subtotal</span><strong id="cartTotal">$0.00</strong></div><button class="button button-primary checkout-button" id="checkoutBtn" type="button">Continue to checkout <span>→</span></button><small>Demo checkout shell — connect your payment backend before launch.</small></div>
-  </aside>
-
-  <div class="modal-layer" id="modalLayer" hidden>
-    <div class="modal-backdrop" data-close-modal></div>
-    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close" data-close-modal type="button" aria-label="Close">×</button>
-      <div id="modalContent"></div>
-    </div>
-  </div>
-
-  <div class="story-viewer" id="storyViewer" hidden>
-    <div class="story-backdrop" data-close-story></div>
-    <article class="story-frame" id="storyFrame">
-      <button class="story-close" type="button" data-close-story aria-label="Close story">×</button>
-      <img id="storyImage" src="" alt="">
-      <div class="story-progress"><span></span></div>
-      <div class="story-overlay"><div class="eyebrow">CYBERA FREE STORY</div><h2 id="storyTitle"></h2><p id="storyBody"></p><div class="story-actions"><button class="button button-light" id="storyPrev" type="button">Previous</button><button class="button button-light" id="storyNext" type="button">Next</button></div></div>
-    </article>
-  </div>
-
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="auth-toast" id="authToast" role="status" aria-live="polite" aria-atomic="true" hidden><span class="auth-toast-icon">↗</span><span data-i18n="loginRequired">ابتدا با GitHub وارد شوید.</span></div>
+  <footer class="footer" id="github"><div class="footer-shell section-shell"><div class="footer-main"><a class="brand" href="#top"><span class="brand-mark"><img src="logo.svg" alt=""></span><span class="brand-name">NullSpire</span></a><p data-i18n="footer">یادداشت‌های امنیت سایبری، پژوهش هک اخلاقی و دفاع عملی.</p></div><div class="footer-links"><a class="button-link" href="https://t.me/Nullactive" target="_blank" rel="noreferrer noopener"><span data-i18n="telegramText">NullSpire در تلگرام</span><span>↗</span></a><a class="button-link" id="footerRepoLink" href="#" target="_blank" rel="noreferrer noopener"><span data-i18n="repo">مخزن گیت‌هاب</span><span>↗</span></a></div><div class="footer-bottom"><span>© <span id="year"></span> NullSpire</span><button class="back-top" id="backTop" type="button"><span data-i18n="backTop">بازگشت به بالا</span><span>↑</span></button></div></div></footer>
+  <dialog class="connect-dialog" id="connectDialog"><div class="dialog-card"><button class="dialog-close" id="closeConnect" type="button" data-i18n-aria="close" aria-label="Close">×</button><div class="eyebrow">GITHUB OAUTH</div><h2 data-i18n="connectTitle">ورود واقعی با حساب GitHub</h2><p data-i18n="connectText">با تأیید GitHub یک نشست واقعی ساخته می‌شود؛ نیازی به ساخت Personal Access Token توسط کاربر نیست.</p><div class="auth-method"><div class="auth-method-title">DEVICE LOGIN</div><div id="oauthStartView"><p data-i18n="loginSteps">کد زیر را در GitHub وارد کنید.</p><button class="button button-primary" id="startGithubLogin" type="button"><span data-i18n="loginStart">شروع ورود با GitHub</span><span>↗</span></button><div class="oauth-start-status" id="oauthStartStatus" aria-live="polite"></div></div><div id="oauthPendingView" hidden><div class="device-code" id="oauthCode">---- ----</div><div class="oauth-actions"><a class="button button-primary" id="verificationLink" href="https://github.com/login/device" target="_blank" rel="noreferrer noopener"><span data-i18n="openVerification">باز کردن GitHub</span><span>↗</span></a><button class="button button-subtle" id="copyCode" type="button"><span data-i18n="copyCode">کپی کد</span><span>⌁</span></button></div><div class="oauth-status"><span id="oauthStatus" data-i18n="loginWaiting">منتظر تأیید GitHub…</span><span class="oauth-countdown" id="oauthCountdown"></span></div></div></div><div class="oauth-actions"><button class="button button-subtle" id="checkLoginButton" type="button"><span data-i18n="checkLogin">بررسی ورود</span><span>✓</span></button><button class="button button-subtle" id="cancelGithubLogin" type="button"><span data-i18n="cancel">لغو</span></button></div><div class="dialog-footnote" data-i18n="oauthNote">این ورود بدون سرور و با GitHub OAuth Device Flow انجام می‌شود.</div></div></dialog>
   <script type="module" src="js/app.js"></script>
 </body>
 </html>
