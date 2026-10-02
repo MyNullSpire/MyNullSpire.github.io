@@ -1,0 +1,34 @@
+{
+  "name": "NullSpire — امنیت سایبری و هک اخلاقی",
+  "short_name": "NullSpire",
+  "description": "مقالات امنیت سایبری، هک اخلاقی و پژوهش آسیب‌پذیری متصل به GitHub Issues.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "lang": "fa",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "img/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://MyNullSpire.github.io/#website",
+      "name": "NullSpire",
+      "url": "https://MyNullSpire.github.io/",
+      "description": "مقالات امنیت سایبری، هک اخلاقی، امنیت وب و پژوهش آسیب‌پذیری.",
+      "inLanguage": [
+        "fa-IR",
+        "en",
+        "ru-RU"
+      ],
+      "publisher": {
+        "@id": "https://MyNullSpire.github.io/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://MyNullSpire.github.io/#organization",
+      "name": "NullSpire",
+      "url": "https://MyNullSpire.github.io/",
+      "sameAs": [
+        "https://github.com/MyNullSpire",
+        "https://t.me/Nullactive"
+      ]
+    }
+  ]
+}

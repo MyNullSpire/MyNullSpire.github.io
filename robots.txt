@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://MyNullSpire.github.io/sitemap.xml
